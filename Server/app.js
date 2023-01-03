@@ -21,6 +21,10 @@ const io = socketio(expressServer, {
     }
 })
 
+app.get('/', (req,res) => {
+    res.status(200).json({msg : "Backend server is on"})
+})
+
 const Game = require('./models/Game')
 
 connectDB(URL)
