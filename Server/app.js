@@ -1,3 +1,4 @@
+
 const express = require('express')
 const app = express()
 const socketio = require("socket.io")
@@ -138,7 +139,7 @@ const startGameClock = async (gameID) => {
     let game = await Game.findById(gameID)
     game.startTime = new Date().getTime(); // gives us milliseconds.
     game = await game.save();
-    let time = 5; 
+    let time = 60; 
 
     let timerID = setInterval(function gameIntervalFunc(){
         if(time > 0){

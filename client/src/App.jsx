@@ -28,7 +28,7 @@ function App() {
     }        
   }, [])
 
-  useEffect(() => {
+  useEffect(() => { 
     if(gameState._id)
       history.push(`/game/${gameState._id}`)
   }, [gameState._id]);
