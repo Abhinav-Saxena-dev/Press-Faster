@@ -17,7 +17,7 @@ const URL = process.env.DATABASE
 const expressServer = app.listen(PORT)
 const io = socketio(expressServer, {
     cors : {
-        origin : "http://localhost:3000"
+        origin : "https://63b41eff3e9b151e7fda7d57--try-type.netlify.app/"
     }
 })
 
