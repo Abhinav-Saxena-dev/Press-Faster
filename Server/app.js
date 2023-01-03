@@ -17,7 +17,7 @@ const URL = process.env.DATABASE
 const expressServer = app.listen(PORT)
 const io = socketio(expressServer, {
     cors : {
-        origin : "https://try-type.netlify.app/"
+        origin : "https://try-type.netlify.app"
     }
 })
 
